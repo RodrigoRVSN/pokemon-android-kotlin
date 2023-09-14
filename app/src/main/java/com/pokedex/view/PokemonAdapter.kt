@@ -22,7 +22,7 @@ class PokemonAdapter(private val items: List<Pokemon?>): RecyclerView.Adapter<Po
             item?.let { it ->
                 Glide.with(itemView.context).load(it.imageUrl).into(ivPokemon)
 
-                tvNumber.text = "N ${item.formattedNumber}"
+                tvNumber.text = "N° ${item.formattedNumber}"
                 tvName.text = item.formattedName
                 tvType1.text = item.types[0].name.replaceFirstChar { it.uppercase() }
 

@@ -13,7 +13,7 @@ import com.pokedex.viewmodel.PokemonViewModelFactory
 class MainActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
 
-    val viewModel by lazy {
+    private val viewModel by lazy {
         ViewModelProvider(this, PokemonViewModelFactory())[PokemonViewModel::class.java]
     }
 
